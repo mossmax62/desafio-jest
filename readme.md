@@ -28,7 +28,7 @@ npm test
 ```
 
 ## Autor
-Maximiliano Mussuto
+* Maximiliano Mussuto
 
-##Licencia
+## Licencia
 Este código está bajo la licencia MIT.
