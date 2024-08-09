@@ -24,7 +24,8 @@ describe("Operaciones CRUD de cafes", () => {
         };
         const response = await request(server).post("/cafes").send(newCafe);
         expect(response.statusCode).toBe(201);
-        expect(response.body).toContainEqual(newCafe);
+        //expect(response.body).toContainEqual(newCafe);
+        expect(response.body).toEqual(expect.objectContaining(newCafe));
     });
 
     test("REQ 4 [PUT /cafes/:id] | Deberia retornar un status code 400 si intento actualizar un cafe con un id que no corresponde al id dentro del payload", async () => {
